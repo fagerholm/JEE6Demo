@@ -17,7 +17,7 @@ public class PerformanceLogger implements Serializable {
             obj = ctx.proceed();
             return obj;
         } finally {
-            System.out.println(ctx.getMethod().getDeclaringClass().getName() + "." + ctx.getMethod().getName() + ": " + (System.currentTimeMillis() - beforeTime));
+            System.out.println(ctx.getMethod().getDeclaringClass().getName() + " - " + ctx.getMethod().getName() + ": " + (System.currentTimeMillis() - beforeTime));
         }
     }
 }
