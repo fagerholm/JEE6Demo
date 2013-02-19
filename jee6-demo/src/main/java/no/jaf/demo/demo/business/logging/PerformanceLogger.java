@@ -4,8 +4,6 @@ import java.io.Serializable;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.InvocationContext;
 
-//@PerformanceLogged
-//@Interceptor
 public class PerformanceLogger implements Serializable {
 
     public PerformanceLogger() {
